@@ -6,7 +6,7 @@
 /*   By: lgimenez <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/19 17:58:00 by lgimenez          #+#    #+#             */
-/*   Updated: 2020/03/11 13:47:45 by lgimenez         ###   ########.fr       */
+/*   Updated: 2020/03/11 15:36:37 by lgimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 # include <mlx.h>
 # include <fcntl.h>
 # include <stdlib.h>
-# include "../libft/libft.h"
+# include "../libft/header/libft.h"
 
 # define MAP_W 0
 # define MAP_H 1
