@@ -6,10 +6,10 @@
 /*   By: lgimenez <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/04 19:38:41 by lgimenez          #+#    #+#             */
-/*   Updated: 2020/03/06 14:55:54 by lgimenez         ###   ########.fr       */
+/*   Updated: 2020/03/12 18:21:26 by lgimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
+#include <stdio.h>
 #include "../../header/cub3d.h"
 
 void	ft_rayc_sprt_stripeloop(t_st *st)
@@ -29,7 +29,7 @@ void	ft_rayc_sprt_stripeloop(t_st *st)
 				st->sprt.sprty = ((((st->win.winy) * 256 - st->win.winh * 128
 					+ st->sprt.sprtscreenh * 128)
 					* st->sprt.sprt_h[0]) / st->sprt.sprtscreenh) / 256;
-				st->draw.color = st->sprt.sprt_data[0][(st->sprt.sprt_h[0]
+				st->draw.color = st->sprt.sprt_data[0][(st->sprt.sprt_w[0]
 					* st->sprt.sprty) + st->sprt.sprtx];
 				if ((st->draw.color & 0x00FFFFFF) != 0)
 					*(st->mlx.img_data + st->sprt.stripe + (st->win.winw

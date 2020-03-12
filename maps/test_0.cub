@@ -1,17 +1,17 @@
 R 1280 720
-NO ./visuals/tex_wood.xpm
-SO ./visuals/tex_bluestone.xpm
-WE ./visuals/tex_greystone.xpm
-EA ./visuals/tex_eagle.xpm
+NO ./visuals/tex_dodo.xpm
+SO ./visuals/tex_dodo.xpm
+WE ./visuals/tex_dodo.xpm
+EA ./visuals/tex_dodo.xpm
 
-S ./visuals/sprt_barrel.xpm
+S ./visuals/tex_dodo.xpm
 F 169,169,169
 C 70,70,70
 
-111111     1  
-1001011   101
-102001     1
-1100W1   
+111111
+100101
+102001
+1100W1
 111111
 
 
