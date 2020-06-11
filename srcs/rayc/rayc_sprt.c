@@ -6,10 +6,10 @@
 /*   By: lgimenez <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/04 19:38:41 by lgimenez          #+#    #+#             */
-/*   Updated: 2020/03/12 18:21:26 by lgimenez         ###   ########.fr       */
+/*   Updated: 2020/06/11 19:11:46 by lgimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdio.h>
+
 #include "../../header/cub3d.h"
 
 void	ft_rayc_sprt_stripeloop(t_st *st)
