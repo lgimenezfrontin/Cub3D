@@ -6,7 +6,7 @@
 /*   By: lgimenez <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/04 19:38:41 by lgimenez          #+#    #+#             */
-/*   Updated: 2020/06/23 16:17:31 by lgimenez         ###   ########.fr       */
+/*   Updated: 2020/06/23 16:31:16 by lgimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,11 +45,9 @@ void	ft_rayc_sprt_varinit(t_st *st, int i)
 {
 	int		currlvl;
 	int		*sprtorder;
-//	double	*sprtdist;
 
 	currlvl = st->coor.currlvl;
 	sprtorder = st->sprt.tabsprtorder[currlvl];
-//	sprtdist = st->sprt.tabsprtdist[currlvl];
 	st->sprt.transformx = (1.0 / (st->rayc.planex * st->coor.diry
 		- st->coor.dirx * st->rayc.planey)) * (st->coor.diry
 		* (st->sprt.tabsprtposx[currlvl][sprtorder[i]] - st->coor.posx)

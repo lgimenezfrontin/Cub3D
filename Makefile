@@ -4,8 +4,9 @@ CC =			gcc
 CFLAGS =		-Wall -Wextra -Werror
 LIBFT_DIR =		libft
 LIBFT_LIB =		$(LIBFT_DIR)/libft.a
-MLX_DIR =		minilibx/mlx_linux
+MLX_DIR =		minilibx/mlx_mac
 MLX_LIB =		$(MLX_DIR)/libmlx.a
+MLX_LINK =		-framework OpenGL -framework AppKit
 SRCS =			srcs/main.c \
 					srcs/utils/get_next_line.c \
 					srcs/utils/ft_iswall.c \
@@ -72,7 +73,7 @@ OBJS =			$(SRCS:.c=.o)
 all:			$(NAME)
 
 $(NAME):		 $(OBJS) $(LIBFT_LIB) $(MLX_LIB)
-					$(CC) $(CFLAGS) $(OBJS) $(LIBFT_LIB) $(MLX_LIB) -o $@ 
+					$(CC) $(CFLAGS) $(OBJS) $(LIBFT_LIB) $(MLX_LIB) $(MLX_LINK) -o $@ 
 
 %.o:			%.c
 					$(CC) $(CFLAGS)  -I. -o $@ -c $? 
