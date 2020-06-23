@@ -6,7 +6,7 @@
 /*   By: lgimenez <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/19 17:58:00 by lgimenez          #+#    #+#             */
-/*   Updated: 2020/03/12 22:09:44 by lgimenez         ###   ########.fr       */
+/*   Updated: 2020/06/23 16:03:17 by lgimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 # define CUB3D_H
 
 # include <math.h>
-# include <mlx.h>
+# include "../minilibx/mlx_linux/mlx.h"
 # include <fcntl.h>
 # include <stdlib.h>
 # include "../libft/header/libft.h"
