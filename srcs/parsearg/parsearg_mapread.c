@@ -6,7 +6,7 @@
 /*   By: lgimenez <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/23 14:43:02 by lgimenez          #+#    #+#             */
-/*   Updated: 2020/03/09 14:46:10 by lgimenez         ###   ########.fr       */
+/*   Updated: 2020/06/23 16:10:49 by lgimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,11 +84,6 @@ void	ft_parsearg_mapread_strmapinit(t_st *st, char *line)
 
 void	ft_parsearg_mapread(t_st *st, char *line)
 {
-	char		*tmp1;
-	char		*tmp2;
-
-	tmp1 = NULL;
-	tmp2 = NULL;
 	if (st->pars.strmap == NULL)
 		ft_parsearg_mapread_strmapinit(st, line);
 	else
