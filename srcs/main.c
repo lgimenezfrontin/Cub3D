@@ -37,6 +37,7 @@ int		main(int argc, char **argv)
 		st.spd.movespeed = 0.07;
 		st.spd.rotspeed = 0.05;
 		st.mlx.mlx_ptr = mlx_init();
+		mlx_get_screen_size(st.mlx.mlx_ptr, &st.win.maxw, &st.win.maxh);
 		ft_parsearg(&st, argv[1]);
 		ft_tabinit(&st);
 		st.mlx.win_ptr = mlx_new_window(st.mlx.mlx_ptr,

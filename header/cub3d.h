@@ -119,6 +119,8 @@ typedef	struct	s_sprt
 
 typedef	struct	s_win
 {
+	int			maxw;
+	int			maxh;
 	int			winw;
 	int			winh;
 	int			winx;

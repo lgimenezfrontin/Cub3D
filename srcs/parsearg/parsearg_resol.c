@@ -33,8 +33,8 @@ void	ft_parsearg_resol(t_st *st, char *line)
 	if (st->maps.nbrmaps > 0)
 		ft_error(st, -11);
 	ft_parsearg_resol_getvalue(st, &line, 'w');
-	if (st->win.winw > 2560)
-		st->win.winw = 2560;
+	if (st->win.winw > st->win.maxw)
+		st->win.winw = st->win.maxw;
 	while (ft_isdigit(*line) == 1)
 		line++;
 	if (*line == '\0')
@@ -42,8 +42,8 @@ void	ft_parsearg_resol(t_st *st, char *line)
 	if (*line != ' ')
 		ft_error(st, -13);
 	ft_parsearg_resol_getvalue(st, &line, 'h');
-	if (st->win.winh > 1440)
-		st->win.winh = 1440;
+	if (st->win.winh > st->win.maxh)
+		st->win.winh = st->win.maxh;
 	while (ft_isdigit(*line) == 1)
 		line++;
 	while (*line == ' ')

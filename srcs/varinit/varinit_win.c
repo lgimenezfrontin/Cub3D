@@ -14,6 +14,8 @@
 
 void	ft_varinit_win(t_st *st)
 {
+	st->win.maxw = 0;
+	st->win.maxh = 0;
 	st->win.winw = 0;
 	st->win.winh = 0;
 	st->win.winx = 0;
