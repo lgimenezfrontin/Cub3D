@@ -15,7 +15,7 @@
 # define CUB3D_H
 
 # include <math.h>
-# include <mlx.h>
+# include "../minilibx/mlx_linux/mlx.h"
 # include <fcntl.h>
 # include <stdlib.h>
 # include "../libft/header/libft.h"

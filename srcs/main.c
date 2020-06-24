@@ -44,7 +44,7 @@ int		main(int argc, char **argv)
 		ft_lvlinit(&st);
 		mlx_hook(st.mlx.win_ptr, 2, (1L << 0), ft_keys_keypress, &st);
 		mlx_hook(st.mlx.win_ptr, 3, (1L << 1), ft_keys_keyrelease, &st);
-		mlx_hook(st.mlx.win_ptr, 17, 0, ft_closewin, &st);
+		mlx_hook(st.mlx.win_ptr, 17, (1L << 17), ft_closewin, &st);
 		mlx_loop_hook(st.mlx.mlx_ptr, ft_loophook, &st);
 		mlx_loop(st.mlx.mlx_ptr);
 	}
