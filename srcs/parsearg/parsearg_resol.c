@@ -21,9 +21,17 @@ void	ft_parsearg_resol_getvalue(t_st *st, char **line, char xy)
 	if (ft_isdigit(**line) == 0)
 		ft_error(st, -13);
 	if (xy == 'w')
+	{
 		st->win.winw = ft_atoi(*line);
+		if (st->win.winw <= 0)
+			ft_error(st, -999);
+	}
 	if (xy == 'h')
+	{
 		st->win.winh = ft_atoi(*line);
+		if (st->win.winh <= 0)
+			ft_error(st, -999);
+	}
 }
 
 void	ft_parsearg_resol(t_st *st, char *line)

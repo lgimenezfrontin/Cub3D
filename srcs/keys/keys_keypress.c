@@ -14,9 +14,9 @@
 
 void	ft_keys_keypress_various(int key, t_st *st)
 {
-	if (key == 65451)
+	if (key == 112)
 		st->keys.plus = 1;
-	if (key == 65453)
+	if (key == 109)
 		st->keys.minus = 1;
 	if (key == 65307)
 		st->keys.esc = 1;
@@ -24,9 +24,9 @@ void	ft_keys_keypress_various(int key, t_st *st)
 
 void	ft_keys_keypress_directions(int key, t_st *st)
 {
-	if (key == 122)
+	if (key == 119)
 		st->keys.w = 1;
-	if (key == 113)
+	if (key == 97)
 		st->keys.a = 1;
 	if (key == 115)
 		st->keys.s = 1;

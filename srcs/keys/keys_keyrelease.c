@@ -14,12 +14,12 @@
 
 void	ft_keys_keyrelease_various(int key, t_st *st)
 {
-	if (key == 65451)
+	if (key == 112)
 	{
 		st->keys.plus = 0;
 		st->keys.keepplus = 0;
 	}
-	if (key == 65453)
+	if (key == 109)
 	{
 		st->keys.minus = 0;
 		st->keys.keepminus = 0;
@@ -30,9 +30,9 @@ void	ft_keys_keyrelease_various(int key, t_st *st)
 
 void	ft_keys_keyrelease_directions(int key, t_st *st)
 {
-	if (key == 122)
+	if (key == 119)
 		st->keys.w = 0;
-	if (key == 113)
+	if (key == 97)
 		st->keys.a = 0;
 	if (key == 115)
 		st->keys.s = 0;
