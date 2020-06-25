@@ -294,7 +294,7 @@ void			ft_tabinit_sprtval_sprttype(t_st *st);
 void			ft_tabinit_getsprtval(t_st *st);
 void			ft_tabinit_getsprtval_loop(t_st *st, int j, int k, int *l);
 
-void			ft_rayc(t_st *st);
+void			ft_rayc(t_st *st, int save);
 void			ft_rayc_ceiling(t_st *st);
 void			ft_rayc_floor(t_st *st);
 void			ft_rayc_walls(t_st *st);

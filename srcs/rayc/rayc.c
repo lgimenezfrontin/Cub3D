@@ -12,7 +12,7 @@
 
 #include "../../header/cub3d.h"
 
-void	ft_rayc(t_st *st)
+void	ft_rayc(t_st *st, int save)
 {
 	st->mlx.img_ptr = mlx_new_image(
 		st->mlx.mlx_ptr, st->win.winw, st->win.winh);
@@ -25,5 +25,6 @@ void	ft_rayc(t_st *st)
 		ft_rayc_sprt(st);
 	mlx_put_image_to_window(
 		st->mlx.mlx_ptr, st->mlx.win_ptr, st->mlx.img_ptr, 0, 0);
-	mlx_destroy_image(st->mlx.mlx_ptr, st->mlx.img_ptr);
+	if (save == 0)
+		mlx_destroy_image(st->mlx.mlx_ptr, st->mlx.img_ptr);
 }

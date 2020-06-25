@@ -21,7 +21,7 @@ int		ft_closewin(t_st *st)
 int		ft_loophook(t_st *st)
 {
 	ft_keys(st);
-	ft_rayc(st);
+	ft_rayc(st, 0);
 	return (0);
 }
 

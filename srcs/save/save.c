@@ -71,7 +71,7 @@ void	ft_save(t_st *st, char **argv)
 		st->mlx.win_ptr = mlx_new_window(st->mlx.mlx_ptr,
 			st->win.winw, st->win.winh, "Cub3D");
 		ft_lvlinit(st);
-		ft_rayc(st);
+		ft_rayc(st, 1);
 		ft_save_screenshot(st);
 	}
 }
